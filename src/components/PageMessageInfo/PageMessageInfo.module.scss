@@ -1,0 +1,14 @@
+@use "../../index.scss" as *;
+
+.pageMessageInfo {
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    font-family: 'CircularProBold';
+  
+    svg {
+      font-size: 7em;
+      margin-bottom: 15px;
+      color: $lighter-gray;
+    }
+  }

@@ -1,0 +1,23 @@
+@import "../../index.scss" ;
+
+.labelValueComponent {
+    line-height: normal;
+    height: fit-content;
+    font-size: 12px;
+    font-family: CircularPro;
+}
+
+.shiftBegins {
+    max-width: 180px;
+    min-width: 125px;
+}
+
+.label {
+    font-family: 'CircularProBold';
+    color: $black;
+}
+
+.value {
+    font-family: 'CircularPro';
+    color: $md-gray;
+}

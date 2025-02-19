@@ -1,0 +1,20 @@
+
+@use "../../index.scss" as *;
+
+.actionButton {
+    cursor: pointer;
+    height: 34px;
+    width: 34px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 3px;
+    border: none;
+    display: flex;
+    :disabled{
+        opacity: 0.5;
+    }
+    :not(:disabled):hover {
+        filter: brightness(1.2);
+      }
+  }
