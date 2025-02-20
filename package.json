@@ -1,6 +1,6 @@
 {
   "name": "subituplibrary",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "A simple React component library",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -8,9 +8,12 @@
     "dist"
   ],
   "scripts": {
+    "start": "react-scripts start",
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "peerDependencies": {
     "react": "^18.2.0",
@@ -23,15 +26,19 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@rollup/plugin-url": "^8.0.2",
+    "bootstrap": "^5.3.3",
     "lottie-react": "^2.4.1",
     "moment": "^2.30.1",
-    "react-bootstrap": "^2.10.9"
+    "react-bootstrap": "^2.10.9",
+    "react-circular-progressbar": "^2.1.0",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.0",
+    "@babel/core": "^7.26.9",
     "@babel/plugin-transform-runtime": "^7.25.9",
-    "@babel/preset-env": "^7.22.0",
-    "@babel/preset-react": "^7.22.0",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@chromatic-com/storybook": "^3.2.4",
     "@rollup/plugin-babel": "^6.0.0",
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-image": "^3.0.3",
@@ -39,7 +46,21 @@
     "@rollup/plugin-node-resolve": "^15.0.0",
     "@rollup/plugin-replace": "^6.0.2",
     "@rollup/plugin-terser": "^0.4.0",
+    "@storybook/addon-essentials": "^8.5.8",
+    "@storybook/addon-interactions": "^8.5.8",
+    "@storybook/addon-links": "^8.5.8",
+    "@storybook/addon-onboarding": "^8.5.8",
+    "@storybook/addon-webpack5-compiler-swc": "^2.1.0",
+    "@storybook/blocks": "^8.5.8",
+    "@storybook/preset-create-react-app": "^8.5.8",
+    "@storybook/react": "^8.5.8",
+    "@storybook/react-vite": "^8.5.8",
+    "@storybook/react-webpack5": "^8.5.8",
+    "@storybook/test": "^8.5.8",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
     "postcss": "^8.5.2",
+    "prop-types": "^15.8.1",
     "rimraf": "^5.0.0",
     "rollup": "^3.25.0",
     "rollup-plugin-copy": "^3.5.0",
@@ -48,9 +69,24 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-url": "^3.0.1",
-    "sass": "^1.85.0"
+    "sass": "^1.85.0",
+    "sass-loader": "^16.0.5",
+    "storybook": "^8.5.8",
+    "style-loader": "^4.0.0"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
